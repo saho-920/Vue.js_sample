@@ -10,6 +10,7 @@
 	<body>
 		<h2>シフトキー＋エンターキーを押すと、アラートを表示する例</h2>
 		<div id="app">
+			<!-- シフトキー＋エンターキーを押すと、アラートを表示する例 -->
 			<input v-on:keyup.enter.shift="showAlert" v-model="myText">
 			<p>{{ myText }}</p>
 		</div>
