@@ -22,8 +22,9 @@
 					inputText: '今日は、天気です。'
 				},
 				watch: {
-					// 入力された文字列を監視する
+					// watchで入力文字を監視して、禁止文字が入力されたらアラートを出す例
 					inputText: function(){
+						// 文字列.indexOf(検索文字列)
 						var pos = this.inputText.indexOf(this.forbiddenText);
 						if (pos >= 0) {
 							alert(this.forbiddenText + "は、入力できません。");
